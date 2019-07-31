@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color picker</title>
+</head>
+<body>
+<div style="height: 100%; width: 100%" [style.background]="background">
+  <p>Enter a color: </p>
+  <input type="text" [value]="background" (change)="onChangeColor($event.target.value)">
+</div>
+</body>
+</html>
